@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 contador.setTextColor(getColor(R.color.white))
                 pantalla.setBackgroundColor(getColor(R.color.blue))
             }else{
-                boton.setBackgroundColor(getColor(R.color.yellow))
+                boton.setBackgroundColor(getColor(R.color.white))
                 contador.setTextColor(getColor(R.color.black))
                 pantalla.setBackgroundColor(getColor(R.color.red))
             }
