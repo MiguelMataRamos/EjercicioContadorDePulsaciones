@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         var cont = 0
         val frase = findViewById<TextView>(R.id.frase)
         val pantalla = findViewById<View>(R.id.pantalla)
+        val imagen = findViewById<ImageView>(R.id.imageView)
 
 
         boton.setOnClickListener{
@@ -43,6 +45,10 @@ class MainActivity : AppCompatActivity() {
                 boton.setBackgroundColor(getColor(R.color.white))
                 contador.setTextColor(getColor(R.color.black))
                 pantalla.setBackgroundColor(getColor(R.color.red))
+            }
+
+            if (cont>24){
+                imagen.visibility = ImageView.VISIBLE
             }
 
         }
